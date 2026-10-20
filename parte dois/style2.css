@@ -1,0 +1,326 @@
+@charset "UTF-8";
+.logo-cabecalho2{
+    max-height: 70px; /* Ajusta a altura da imagem para não ultrapassar os 100px do cabeçalho */
+    width: auto;     /* Mantém a proporção da imagem sem distorcer */
+    object-fit: contain;
+}
+h1{
+    background-color: #3c3c3c;
+    color: white;
+    height: 100px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Container Principal da Barra */
+.barra-busca {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  padding: 8px 10px 8px 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Blocos dos Campos (Onde, Quando, Quem) */
+.campo-busca {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 4px 12px;
+}
+
+/* Título em Negrito (Onde, Quando, Quem) */
+.campo-busca label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+/* Campos de Texto (Inputs) */
+.campo-busca input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222222;
+}
+
+/* Cor do placeholder */
+.campo-busca input::placeholder {
+  color: #717171;
+}
+
+/* Linha Divisória entre os Campos */
+.divisor {
+  width: 1px;
+  height: 32px;
+  background-color: #dddddd;
+}
+
+/* Botão Vermelho Circular */
+.btn-buscar {
+  background-color: #3c3c3c;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buscar:hover {
+  background-color: #3c3c3c;
+}
+
+/* Ícone de Lupa dentro do Botão */
+.btn-buscar svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+}
+/* segunda parte do codigo */
+/* ==========================================
+   1. CABEÇALHO / HEADER
+   ========================================== */
+.header-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  font-family: Arial, sans-serif;
+}
+
+/* Logo da Marca (PB ALUGUEL) */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.img-logo {
+  height: 48px; /* Altura ideal para destacar a logo no topo */
+  width: auto;  /* Mantém as proporções da imagem sem distorcer */
+  object-fit: contain;
+}
+
+/* Links Centrais do Menu */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f7f7f7;
+}
+
+/* Menu do Usuário (Direita) */
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.btn-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 5px 5px 5px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-usuario:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.menu-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #555555;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  background-color: #717171;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+/* ==========================================
+   2. BARRA DE BUSCA (MINI FORMULÁRIO)
+   ========================================== */
+.barra-busca {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  padding: 8px 10px 8px 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.campo-busca {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 4px 12px;
+}
+
+.campo-busca label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.campo-busca input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222222;
+}
+
+.campo-busca input::placeholder {
+  color: #717171;
+}
+
+.divisor {
+  width: 1px;
+  height: 32px;
+  background-color: #dddddd;
+}
+
+/* Botão de Busca (Usando o verde da PB ALUGUEL) */
+.btn-buscar {
+  background-color: #00a878; /* Tom de verde combinado com a sua logo */
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buscar:hover {
+  background-color: #008760;
+}
+
+.btn-buscar svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+}
+/* terceira parte do código */
+/* Container da Barra de Categorias */
+.container-categorias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  overflow-x: auto; /* Permite rolar para os lados em telas menores */
+  white-space: nowrap;
+}
+
+/* Oculta a barra de rolagem visual mantendo a funcionalidade */
+.container-categorias::-webkit-scrollbar {
+  display: none;
+}
+.container-categorias {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Botão individual de cada Categoria */
+.item-categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #717171;
+  transition: all 0.2s ease;
+}
+
+/* Estilo do Ícone */
+.icone-categoria {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+/* Estilo do Texto */
+.rotulo-categoria {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+/* Efeito Hover (ao passar o rato por cima) */
+.item-categoria:hover {
+  color: #222222;
+  border-bottom-color: #dddddd;
+}
+
+.item-categoria:hover .icone-categoria {
+  transform: translateY(-2px);
+}
+
+/* Categoria Selecionada / Ativa */
+.item-categoria.ativo {
+  color: #00a878; /* Tom verde da identidade PB ALUGUEL */
+  border-bottom-color: #00a878;
+}
